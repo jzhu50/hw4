@@ -479,7 +479,6 @@ void BinarySearchTree<Key, Value>::insert(const std::pair<const Key, Value> &key
       }
     }
 
-
     Node<Key, Value>* newNode = new Node<Key, Value>(ikey, ival, parent);
 
     // link newNode to tree
@@ -543,8 +542,8 @@ template<class Key, class Value>
 Node<Key, Value>*
 BinarySearchTree<Key, Value>::predecessor(Node<Key, Value>* current)
 {
-    // TODO
-    // finds the next smaller key
+  // TODO
+  // finds the next smaller key
   if (current == nullptr) return nullptr;
 
   // 1) no left child, search upward
